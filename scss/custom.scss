@@ -1,0 +1,74 @@
+@import 'variables';
+@import 'reset';
+@import 'grid';
+@import 'mixin';
+@import 'components';
+@import 'base';
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 2.5rem;
+
+}
+.navbar{
+    background: rgb(80, 80, 244);
+    display: flex;
+
+    svg{
+        fill : white;
+        transition: all 1s;
+        margin-left: 1rem;
+
+    }
+    ul{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 3rem;
+        list-style: none;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        li{
+            color: white;
+            &:not(:last-child){
+            padding: 0 1rem 0 0;
+            }
+        }
+    }
+}
+
+.side-nav{
+    list-style: none;
+    font-size: 1.3rem;
+    background: rgba(0,0,0,0.6);
+    padding: 1rem;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+
+
+
+    ul{
+        list-style: none;
+        padding: 3rem  0 0 0;
+
+    }
+    li{
+        color: white;
+        &:not(:last-child){
+        }
+    }
+}
+.close{
+    font-size: 3rem;
+    position: absolute;
+    color:rgb(201, 201, 201);
+    right: 1rem;
+    display: block;
+    z-index: 100;
+    top: 0;
+    left: 8rem;
+}
